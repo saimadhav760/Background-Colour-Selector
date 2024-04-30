@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Color Selector</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      transition: background-color 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Background Color Selector</h1>
+    <div id="color-picker" class="form-group">
+      <label for="color">Select a color:</label>
+      <input type="color" id="color" class="form-control">
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('color').addEventListener('input', function() 
+    {
+      document.body.style.backgroundColor = this.value; 
+    });
+  </script>
+</body>
+</html>
